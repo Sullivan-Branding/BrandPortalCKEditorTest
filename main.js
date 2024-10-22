@@ -144,29 +144,17 @@ const editorConfig = {
 			'undo',
 			'redo',
 			'|',
-			'revisionHistory',
-			'trackChanges',
 			'comment',
 			'commentsArchive',
 			'|',
-			'showBlocks',
 			'findAndReplace',
 			'|',
 			'heading',
-			'style',
-			'|',
-			'fontSize',
-			'fontFamily',
-			'fontColor',
-			'fontBackgroundColor',
 			'|',
 			'bold',
 			'italic',
-			'underline',
-			'strikethrough',
 			'subscript',
 			'superscript',
-			'code',
 			'removeFormat',
 			'|',
 			'specialCharacters',
@@ -175,16 +163,12 @@ const editorConfig = {
 			'insertImage',
 			'mediaEmbed',
 			'insertTable',
-			'highlight',
 			'blockQuote',
-			'codeBlock',
-			'htmlEmbed',
 			'|',
 			'alignment',
 			'|',
 			'bulletedList',
 			'numberedList',
-			'todoList',
 			'outdent',
 			'indent'
 		],
@@ -269,10 +253,6 @@ const editorConfig = {
 	blockToolbar: [
 		'comment',
 		'|',
-		'fontSize',
-		'fontColor',
-		'fontBackgroundColor',
-		'|',
 		'bold',
 		'italic',
 		'|',
@@ -310,12 +290,6 @@ const editorConfig = {
 				model: 'paragraph',
 				title: 'Paragraph',
 				class: 'ck-heading_paragraph'
-			},
-			{
-				model: 'heading1',
-				view: 'h1',
-				title: 'Heading 1',
-				class: 'ck-heading_heading1'
 			},
 			{
 				model: 'heading2',
@@ -409,54 +383,6 @@ const editorConfig = {
 	},
 	sidebar: {
 		container: document.querySelector('#editor-annotations')
-	},
-	style: {
-		definitions: [{
-				name: 'Article category',
-				element: 'h3',
-				classes: ['category']
-			},
-			{
-				name: 'Title',
-				element: 'h2',
-				classes: ['document-title']
-			},
-			{
-				name: 'Subtitle',
-				element: 'h3',
-				classes: ['document-subtitle']
-			},
-			{
-				name: 'Info box',
-				element: 'p',
-				classes: ['info-box']
-			},
-			{
-				name: 'Side quote',
-				element: 'blockquote',
-				classes: ['side-quote']
-			},
-			{
-				name: 'Marker',
-				element: 'span',
-				classes: ['marker']
-			},
-			{
-				name: 'Spoiler',
-				element: 'span',
-				classes: ['spoiler']
-			},
-			{
-				name: 'Code (dark)',
-				element: 'pre',
-				classes: ['fancy-code', 'fancy-code-dark']
-			},
-			{
-				name: 'Code (bright)',
-				element: 'pre',
-				classes: ['fancy-code', 'fancy-code-bright']
-			}
-		]
 	},
 	table: {
 		contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells', 'tableProperties', 'tableCellProperties']
